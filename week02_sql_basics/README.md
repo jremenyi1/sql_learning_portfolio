@@ -53,4 +53,4 @@ These materials are kept **public** because:
 - the goal is to show learning progress and structured thinking
 
 This repository is a **learning portfolio**, not a collection of polished or production-ready SQL projects.
->>>>>>> 79d9425 (Week 2 SQL basics initial commit)
+
