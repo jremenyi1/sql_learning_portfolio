@@ -35,6 +35,7 @@ The examples in this folder are intentionally simple and beginner-friendly. They
   Practical examples of filtering data using `WHERE`, `BETWEEN`, `IN`, and `NULL` checks.
 
 - `submission_evidence.sql`
+
   My Week 2 submission for SQL can be found here (assessment evidence).
 
 - `reflections.md`  
