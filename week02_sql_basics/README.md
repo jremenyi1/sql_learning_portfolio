@@ -1,6 +1,4 @@
-# sql_learning_portfolio
-This is a structured learning material, not pretending to be industry projects.
-=======
+
 # Week 2 — SQL Basics
 
 This folder contains my **Week 2 SQL learning materials** from the Oracle Academy / Oracle APEX course.
