@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# sql_learning_portfolio
-This is a structured learning material, not pretending to be industry projects.
-=======
+
 # Week 2 — SQL Basics
 
 This folder contains my **Week 2 SQL learning materials** from the Oracle Academy / Oracle APEX course.
@@ -54,4 +51,4 @@ These materials are kept **public** because:
 - the goal is to show learning progress and structured thinking
 
 This repository is a **learning portfolio**, not a collection of polished or production-ready SQL projects.
->>>>>>> 79d9425 (Week 2 SQL basics initial commit)
+
