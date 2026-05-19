@@ -1,9 +1,9 @@
 # Week 4 — SQL Functions and Operators
 
 This week builds on filtering and sorting by focusing on using functions and
-operators to actively work with data inside SQL queries. The main goal was to
-clean, transform, and summarise data directly in SQL, rather than relying on
-post-processing elsewhere.
+operators to shape data directly in SQL queries. The main goal was to clean,
+transform, and summarise data in SQL rather than relying on changes after the
+query has run.
 
 All examples were written and tested in Oracle APEX.
 
@@ -14,13 +14,16 @@ All examples were written and tested in Oracle APEX.
 This week covered:
 
 - using built-in SQL functions
-- applying string functions to clean and standardise text
-- using numeric functions for calculations and rounding
-- combining functions with arithmetic operators
-- improving readability of calculated outputs
+- combining logical operators with functions
+- understanding how operator precedence affects expressions
+- creating calculated columns using arithmetic operators
+- using string functions to clean and standardise text
+- applying numeric functions for rounding and calculations
+- sorting results that include calculated and formatted fields
 
-A recurring theme was that SQL can be used not just to retrieve data, but to
-prepare data in a form that is immediately useful for analysis.
+A recurring theme was that SQL can do much more than retrieve data. Queries can
+look correct but still return misleading results if expressions and conditions
+are not written carefully.
 
 ---
 
@@ -52,5 +55,5 @@ prepare data in a form that is immediately useful for analysis.
 ## Notes
 
 This week highlighted how much data preparation can be done directly in SQL.
-Using functions consistently made my queries clearer, reduced manual clean-up,
-and helped ensure results were ready for analysis as soon as they were returned.
+Using functions consistently made my queries easier to read and helped ensure
+the results were ready to use as soon as they were returned.
