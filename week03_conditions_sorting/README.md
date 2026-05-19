@@ -1,53 +1,52 @@
 # Week 3 — SQL Conditions and Sorting
 
-This folder contains my **Week 3 SQL learning materials** from the Oracle Academy / Oracle APEX course.
+This week builds on basic filtering by focusing on query logic, result control,
+and sorting. The main goal was to write queries that do exactly what I intend —
+no more, no less.
 
-The focus this week was on writing more controlled and accurate SQL queries by combining logical conditions correctly, limiting result sets, and sorting query outputs.
+All examples were written and tested in Oracle APEX.
 
 ---
 
-## Learning Focus
+## What I Worked On
 
 This week covered:
 
-- how and when to limit query results using `LIMIT`
-- how to combine conditions using `AND`, `OR`, and `NOT`
-- how logical operator precedence affects query results
-- why using brackets improves clarity and prevents logic errors
-- how to sort results using `ORDER BY`, including sorting by multiple columns
+- limiting result sets using `LIMIT`
+- combining conditions with `AND`, `OR`, and `NOT`
+- understanding logical operator precedence
+- using brackets to make query logic explicit
+- sorting results with `ORDER BY`, including multi-column sorting
 
-The examples in this folder are intentionally simple and beginner-friendly. They reflect learning and practice, not production-level SQL.
+A recurring theme was that syntactically correct SQL can still be logically
+wrong if the conditions are not grouped carefully.
 
 ---
 
 ## Folder Contents
 
 - `README.md`  
-  Project overview including folder contents.
+  Overview of the week’s focus.
 
 - `limiting_and_logical_conditions.md`  
-  Conceptual notes written in plain English, covering result limiting and logical conditions.
+  Notes on limiting results and combining logical conditions.
 
 - `logical_precedence_examples.sql`  
-  SQL examples demonstrating how `AND`, `OR`, and brackets affect query logic.
+  Examples showing how `AND`, `OR`, and brackets change query results.
 
-- `order_by_and_sorting_examples.sql`  
-  Practical examples of sorting query results using `ORDER BY` and `DESC`.
+- `order_by_limit_sorting_examples.sql`  
+  Sorting and limiting examples using `ORDER BY` and `LIMIT`.
 
 - `submission_evidence.sql`  
-  My Week 3 SQL submission (assessment evidence).
+  SQL queries submitted for the Week 3 assessment.
 
 - `reflections.md`  
-  A short 3–2–1 reflection summarising what I learned, what I want to improve, and my action plan.
+  A short reflection on lessons learned and areas to improve.
 
 ---
 
-## About This Repository
+## Notes
 
-These materials are kept **public** because:
-
-- the data is not sensitive
-- the queries are educational
-- the goal is to show learning progress and structured thinking
-
-This repository is a **learning portfolio**, not a collection of polished or production-ready SQL projects.
+This week highlighted how easy it is to get the *wrong* answer with SQL even
+when the syntax is correct. Using brackets consistently made my queries easier
+to read and much easier to reason about.

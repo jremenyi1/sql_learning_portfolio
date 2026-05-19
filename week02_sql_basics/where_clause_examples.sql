@@ -1,20 +1,12 @@
 /*
 File: where_clause_examples.sql
-Purpose: Demonstrate correct use of the WHERE clause for filtering data.
-
-Focus:
-- text filtering
-- numeric comparisons
-- range checks
-- list-based filtering
-- handling NULL values
+Purpose: Practice examples for filtering data using the WHERE clause.
+Week: 2
 */
 
-------------------------------------------------------------
--- Task 1: Basic text filtering using LIKE
--- Business rule:
--- Return clients whose last name starts with the letter 'S'.
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Text filtering using LIKE
+-- --------------------------------------------------
 
 SELECT
     first_name,
@@ -23,11 +15,9 @@ FROM d_clients
 WHERE last_name LIKE 'S%';
 
 
-------------------------------------------------------------
--- Task 2: Numeric comparison
--- Business rule:
--- Identify events with a cost below 1000.
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Numeric comparison
+-- --------------------------------------------------
 
 SELECT
     id
@@ -35,11 +25,9 @@ FROM d_events
 WHERE cost < 1000;
 
 
-------------------------------------------------------------
--- Task 3: Range filtering using BETWEEN
--- Business rule:
--- Return events with costs between 500 and 2000 (inclusive).
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Range filtering using BETWEEN
+-- --------------------------------------------------
 
 SELECT
     id
@@ -47,11 +35,9 @@ FROM d_events
 WHERE cost BETWEEN 500 AND 2000;
 
 
-------------------------------------------------------------
--- Task 4: Filtering using IN
--- Business rule:
--- Return partners who are consultants.
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Filtering using IN
+-- --------------------------------------------------
 
 SELECT
     first_name,
@@ -60,11 +46,9 @@ FROM d_partners
 WHERE partner_type IN ('Consultant');
 
 
-------------------------------------------------------------
--- Task 5: Handling NULL values
--- Business rule:
--- Identify partners with no authorised expense amount recorded.
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Handling NULL values
+-- --------------------------------------------------
 
 SELECT
     first_name,

@@ -1,10 +1,10 @@
-# Week 03 Reflection – SQL Conditions and Sorting
+# Week 03 Reflection — Conditions and Sorting
 
-## Overview
+This week pushed me to think more carefully about query logic rather than just
+syntax. Most of the SQL I wrote was technically correct, but not always
+logically correct on the first attempt.
 
-This week focused on improving the accuracy and clarity of SQL queries by limiting results, combining logical conditions correctly, and sorting outputs. I spent time understanding how SQL evaluates logic and why brackets are important when writing more complex `WHERE` clauses.
-
-Working in Oracle APEX helped me see how small changes in logic can significantly change query results.
+Seeing that difference was the main lesson.
 
 ---
 
@@ -12,51 +12,58 @@ Working in Oracle APEX helped me see how small changes in logic can significantl
 
 ### Limiting Results
 
-I learned that using `LIMIT` is useful when exploring data or testing queries. It helps avoid large outputs and makes it easier to check whether a query behaves as expected.
+Using `LIMIT` is simple, but very useful. It makes it easier to explore tables
+and test queries without being overwhelmed by output.
+
+I found it most helpful when combined with `ORDER BY`, especially when checking
+whether sorting logic behaves as expected.
 
 ---
 
 ### Logical Conditions and Precedence
 
-I learned that SQL applies logical operators in a fixed order. `AND` is evaluated before `OR`, which can lead to unexpected results if brackets are not used.
+This was the most important part of the week.
 
-Using brackets makes query logic clearer and helps ensure results match the intended business rule.
+SQL evaluates `AND` before `OR`, which can easily lead to unintended results.
+I ran several queries that looked reasonable but returned the wrong rows until
+I added brackets.
 
----
-
-### Sorting Query Results
-
-I learned how to use `ORDER BY` to control how results are displayed. Sorting data makes query outputs easier to read and interpret, especially when working with salaries or grouped data.
-
----
-
-## Challenges This Week
-
-The main challenge was understanding why some queries returned unexpected results even though the syntax was correct. This helped me realise that writing SQL is not only about syntax, but also about logic and evaluation order.
+From now on, I plan to use brackets whenever conditions are combined, even if
+they are not strictly required. The clarity is worth it.
 
 ---
 
-## 3 Things I Learned
+### Sorting Results
 
-1. `LIMIT` is useful for safe and manageable query testing.
-2. Logical operator precedence can change query results.
-3. Brackets improve both accuracy and readability.
-
----
-
-## 2 Skills I Want to Improve
-
-1. Writing more complex logical conditions with confidence.
-2. Reading and reviewing query logic more carefully.
+Sorting data made query outputs much easier to read and interpret.
+Ordering by multiple columns helped reinforce the idea that SQL results are not
+inherently ordered unless explicitly told to be.
 
 ---
 
-## 1 Action Plan
+## Challenges
 
-I will always use brackets when combining `AND` and `OR`, even if they are not strictly required. I will also practise reviewing queries slowly to check logic before running them.
+The main challenge was understanding *why* a query returned unexpected results.
+Once I slowed down and stepped through the logic carefully, the behaviour made
+sense.
+
+This reinforced the idea that SQL requires the same kind of discipline as
+experimental design: assumptions need to be explicit.
 
 ---
 
-## Final Note
+## Key Points from This Week
 
-This week helped me move beyond basic filtering and start thinking more carefully about query logic. It feels like an important step towards writing more reliable and professional SQL queries.
+- `LIMIT` is useful for safe and focused query testing.
+- Logical operator precedence matters more than it first appears.
+- Brackets improve both correctness and readability.
+
+---
+
+## What I’ll Focus on Next
+
+I want to become more confident reading complex `WHERE` clauses and spotting
+logic issues before running a query.
+
+This week felt like a turning point from “writing SQL that works” to “writing
+SQL I actually trust.”

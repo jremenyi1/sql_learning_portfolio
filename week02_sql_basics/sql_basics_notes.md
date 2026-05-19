@@ -5,24 +5,24 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Level](https://img.shields.io/badge/SCQF-Level%207-lightgrey)
 
-These notes summarise my understanding of SQL fundamentals from Week 2, with a focus on how SQL is used in practice and why it is preferred over spreadsheets for many types of data work.
+These notes summarise my understanding of core SQL concepts from Week 2, with a focus on how SQL is used in practice and why it is preferred over spreadsheets for many types of data work.
 
 ---
 
 ## SQL vs Excel — When to Use Each
 
-Excel is useful for small datasets, quick checks, and one-off analysis. It is flexible and easy to use, which makes it ideal for personal tracking, budgeting, or early exploration of data.
+Excel is useful for small datasets, quick checks, and one-off analysis. It is flexible and easy to use, which makes it ideal for personal tracking, simple reporting, or early exploration of unfamiliar data.
 
-However, Excel starts to struggle when:
+Problems start to appear when:
 
-- datasets become large
-- multiple people edit the same file
-- formulas break or results change unexpectedly
-- version control becomes difficult
+- datasets grow beyond a manageable size  
+- multiple people need to edit the same file  
+- formulas become fragile or hard to trace  
+- version control turns into guesswork 
 
-SQL databases are designed to handle these situations more reliably. Data is stored in a structured way, rules can be enforced, and many users can work with the same data at the same time. Queries can be reused and produce consistent results.
+SQL databases are designed for exactly these situations. Data is stored in a consistent structure, rules can be enforced at the database level, and many users can work with the same data without overwriting each other’s work. Queries can be saved, reused, and audited, producing the same results each time.
 
-For this reason, SQL is widely used in professional environments, even though Excel is still valuable for ad-hoc tasks.
+For this reason, SQL is standard in professional data environments, with Excel remaining useful for ad-hoc tasks rather than as a system of record.
 
 ---
 
@@ -33,35 +33,36 @@ Databases provide:
 - structure and consistency
 - improved data integrity through constraints
 - better performance for large datasets
-- controlled and secure access
+- controlled access and security
 - reliable reporting and automation
 
-SQL allows data to be queried, filtered, and transformed efficiently. Tasks that would be slow, manual, or error-prone in Excel can often be handled quickly and repeatably using SQL.
+SQL makes it possible to filter, combine, and transform data efficiently. Tasks that would be slow, manual, or error-prone in spreadsheets can often be handled cleanly and repeatably with well-written queries.
 
 ---
 
 ## Data Quality and Cleaning
 
-Clean data is essential before loading it into a database.
+Good analysis depends on clean data, regardless of the tool being used.
 
-This includes:
+Typical cleaning steps include:
 
-- removing duplicate records
-- handling missing or invalid values
-- standardising formats such as dates, currencies, and text
+- removing duplicate records  
+- handling missing or invalid values  
+- standardising formats such as dates, currencies, and text  
 
-If data is not cleaned, SQL queries can return misleading or incorrect results. For small datasets, data cleaning can be done in Excel. For larger datasets, tools such as Python (for example, using pandas) are more appropriate.
+If data quality issues are ignored, SQL queries can return results that look correct but are fundamentally misleading. For small datasets, basic cleaning can be done in Excel. For larger or more complex data, tools such as Python (for example, using pandas) are usually more appropriate.
 
-Good data quality reduces errors and makes analysis more reliable.
+Investing time in data quality upfront reduces downstream errors and makes results easier to trust.
 
 ---
 
-## Real-World Impact of Poor Data Handling
+## Real-World Consequences of Poor Data Handling
 
-Poor data management has caused serious real-world problems, including:
+Poor data practices have caused serious real-world problems, including:
 
-- lost COVID-19 test results due to spreadsheet limitations
-- financial reporting errors caused by broken formulas
-- inventory and operational failures driven by uncoordinated spreadsheets
+- lost COVID-19 test results due to spreadsheet limitations  
+- financial reporting errors caused by broken or copied formulas  
+- inventory and operational failures driven by disconnected, manually maintained files  
 
-These examples highlight why databases are critical when data becomes large, shared, or high-risk.
+These cases highlight why databases become essential once data is large, shared, or high-risk. They also explain why SQL skills remain valuable across many roles, even outside traditional data teams.
+

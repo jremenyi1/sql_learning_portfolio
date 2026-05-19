@@ -1,10 +1,12 @@
-# Week 02 Reflection – SQL and Data
+# Week 02 Reflection — SQL Basics
 
-## Overview
+This week was about getting comfortable with the core mechanics of SQL and,
+more importantly, understanding why databases are used instead of spreadsheets
+once data grows or becomes shared.
 
-This week focused on the basics of SQL, especially how to retrieve and manipulate data using SELECT statements, arithmetic operations, and the WHERE clause. I also spent time understanding when SQL is more suitable than Excel and how data quality affects query accuracy.
-
-Working in Oracle APEX helped me practise writing real queries and see how small syntax changes can completely change results.
+Working in Oracle APEX helped make this concrete. Small changes in a query
+often led to very different results, which made it clear that SQL rewards
+careful thinking rather than trial-and-error guessing.
 
 ---
 
@@ -12,77 +14,70 @@ Working in Oracle APEX helped me practise writing real queries and see how small
 
 ### SQL vs Excel
 
-I learned that SQL is much more reliable than Excel when working with large or shared datasets. Excel is useful for quick analysis, small datasets, and simple calculations, but it becomes unstable when data grows or when multiple people work on the same file.
+Excel is still useful for quick checks and small datasets, but its limits are
+easy to hit. As soon as data grows, gets shared, or needs to be reused
+consistently, spreadsheets become fragile.
 
-SQL databases solve these issues by storing data in a structured way. They allow multiple users to access the same data safely, and queries always return consistent results.
+SQL databases handle these situations much better. The structure is explicit,
+rules can be enforced, and the same query always produces the same result.
+That reliability is the main difference.
 
 ---
 
 ### Arithmetic and Operator Precedence
 
-I learned that the order of operations in SQL matters a lot. Using brackets correctly ensures calculations are performed in the right sequence.
+This week made it obvious that SQL is not just about retrieving data.
+It is also about getting the logic right.
 
-For example:
-- Adding a bonus before applying tax gives a different result than applying tax first
-- Multiplying before adding a fixed value changes the final output
-
-This made it clear that SQL is not just about writing queries, but also about understanding logic and calculation order.
-
----
-
-### Filtering Data with WHERE
-
-I learned how to filter data using different conditions:
-
-- `LIKE` for pattern matching
-- `=` and `<` for comparisons
-- `BETWEEN` for ranges
-- `IN` for specific sets of values
-- `IS NULL` for missing data
-
-This helped me understand how SQL allows precise control over what data is returned.
+Adding a value before applying tax produces a different result than doing it
+the other way around. The only way to make intent clear is to use brackets.
+Once I started doing that consistently, the queries became easier to read and
+much easier to reason about.
 
 ---
 
-### Data Quality Matters
+### Filtering with WHERE
 
-I also learned that poor data quality can completely break SQL results. Missing values, duplicates, or inconsistent formats can lead to incorrect outputs.
+I practised filtering data using `LIKE`, comparisons, ranges, sets, and
+`NULL` checks. What stood out is how precise SQL can be when conditions are
+written carefully.
 
-Cleaning data before inserting it into a database is essential. This can be done in Excel for small datasets or using Python (pandas) for larger datasets.
-
----
-
-## Challenges This Week
-
-I had some difficulties accessing Oracle APEX at the beginning, which slowed down my progress. I could not see the required tables initially, and this made it difficult to start the tasks.
-
-Once the access issue was resolved, I was able to complete all SQL exercises. This helped me understand that technical setup issues are part of working with real systems.
+This also highlighted how easy it is to return the wrong data if conditions
+are slightly off.
 
 ---
 
-## 3 Things I Learned
+### Data Quality
 
-1. SQL is more reliable than Excel for structured and shared data.
-2. Brackets and operator precedence change query results significantly.
-3. Clean data is essential for accurate SQL outputs.
+Poor data quality undermines everything else. Missing values, duplicates, or
+inconsistent formats can quietly break queries without throwing errors.
 
----
-
-## 2 Skills I Want to Improve
-
-1. Writing more complex queries combining multiple conditions and operations.
-2. Organising and exporting SQL work more efficiently from Oracle APEX.
+For small datasets, Excel can be enough for cleaning. For larger datasets,
+tools like Python are clearly more appropriate.
 
 ---
 
-## 1 Action Plan
+## Challenges
 
-I will practise SQL regularly in Oracle APEX using the workbook exercises. I will also review any mistakes carefully to understand why queries fail or produce unexpected results.
+Accessing Oracle APEX took longer than expected at the start of the week.
+Not being able to see the required tables slowed things down, but it also felt
+realistic. Setup issues are part of working with real systems.
 
-My goal is to become more confident in combining SELECT, WHERE, and arithmetic operations without needing to check syntax every time.
+Once access was fixed, the SQL itself was manageable.
 
 ---
 
-## Final Note
+## Key Points from This Week
 
-This week helped me build a stronger foundation in SQL logic and data handling. I still see it as early-stage learning, but I can already see how these skills apply to real-world data analysis and reporting.
+- SQL is more reliable than Excel for structured, shared data.
+- Calculation order matters, and brackets make intent explicit.
+- Clean data is a prerequisite for meaningful results.
+
+---
+
+## What I’ll Focus on Next
+
+I want to get faster at writing queries without needing to second-guess
+basic syntax. More practice combining filtering and calculations should help.
+
+Overall, this week felt like laying foundations. Early-stage, but solid.

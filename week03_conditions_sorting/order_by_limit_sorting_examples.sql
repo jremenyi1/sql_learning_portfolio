@@ -1,15 +1,12 @@
 /*
-File: order_by_and_sorting_examples.sql
-Purpose: Demonstrate sorting query results using ORDER BY.
-
-Focus:
-- ascending vs descending order
-- sorting by multiple columns
+File: order_by_limit_sorting_examples.sql
+Purpose: Practice examples for ORDER BY, LIMIT, and basic filtering.
+Week: 3
 */
 
-------------------------------------------------------------
--- Task 1: Sort by salary (ascending)
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Sort by salary (ascending)
+-- --------------------------------------------------
 
 SELECT
     last_name,
@@ -18,9 +15,9 @@ FROM f_staffs
 ORDER BY salary;
 
 
-------------------------------------------------------------
--- Task 2: Sort by salary (descending)
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Sort by salary (descending)
+-- --------------------------------------------------
 
 SELECT
     last_name,
@@ -29,9 +26,9 @@ FROM f_staffs
 ORDER BY salary DESC;
 
 
-------------------------------------------------------------
--- Task 3: Sort by department, then salary
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Sort by department, then salary
+-- --------------------------------------------------
 
 SELECT
     department,
@@ -41,10 +38,9 @@ FROM f_staffs
 ORDER BY department, salary DESC;
 
 
-------------------------------------------------------------
--- TASK 4
+-- --------------------------------------------------
 -- Limit results
-------------------------------------------------------------
+-- --------------------------------------------------
 
 SELECT
     first_name,
@@ -54,10 +50,9 @@ FROM f_staffs
 LIMIT 5;
 
 
-------------------------------------------------------------
--- TASK 5
--- Logical conditions with brackets
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Filter with AND / OR
+-- --------------------------------------------------
 
 SELECT
     first_name,
@@ -68,14 +63,3 @@ FROM f_staffs
 WHERE (department = 'Sales' OR department = 'Marketing')
 AND salary > 10;
 
-
-------------------------------------------------------------
--- TASK 6
--- Sorted output
-------------------------------------------------------------
-
-SELECT
-    last_name,
-    salary
-FROM f_staffs
-ORDER BY salary DESC;

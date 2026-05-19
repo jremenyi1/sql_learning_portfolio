@@ -1,16 +1,12 @@
 /*
 File: arithmetic_and_precedence.sql
-Purpose: Demonstrate correct use of arithmetic operations and operator precedence in SQL.
-
-Key idea:
-Brackets are used to control the order of calculations so results match real-world business rules.
+Purpose: Practice examples for arithmetic operations and operator precedence in SQL.
+Week: 2
 */
 
-------------------------------------------------------------
--- Task 1: Bonus added before tax
--- Business rule:
--- Add a fixed bonus first, then apply tax.
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Bonus added before tax
+-- --------------------------------------------------
 
 SELECT
     last_name,
@@ -18,11 +14,9 @@ SELECT
 FROM f_staffs;
 
 
-------------------------------------------------------------
--- Task 2: Percentage increase before fixed deduction
--- Business rule:
--- Apply percentage increase first, then subtract a fixed amount.
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Percentage increase before fixed deduction
+-- --------------------------------------------------
 
 SELECT
     last_name,
@@ -30,11 +24,9 @@ SELECT
 FROM f_staffs;
 
 
-------------------------------------------------------------
--- Task 3: Overtime calculation
--- Business rule:
--- Multiply base salary for overtime rate, then add a fixed incentive.
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Overtime calculation
+-- --------------------------------------------------
 
 SELECT
     last_name,
@@ -42,11 +34,9 @@ SELECT
 FROM f_staffs;
 
 
-------------------------------------------------------------
--- Task 4: Service charge added before discount
--- Business rule:
--- Add a fixed service charge first, then apply a percentage discount.
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Service charge added before discount
+-- --------------------------------------------------
 
 SELECT
     id,

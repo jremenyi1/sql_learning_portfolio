@@ -1,18 +1,13 @@
 
 /*
 File: logical_precedence_examples.sql
-Purpose: Demonstrate how logical operator precedence affects query results.
-
-Key idea:
-SQL evaluates NOT, then AND, then OR.
-Brackets are used to control evaluation order.
+Purpose: Practice examples demonstrating logical operator precedence in SQL.
+Week: 3
 */
 
-------------------------------------------------------------
--- Task 1: AND evaluated before OR
--- Business rule (incorrectly expressed):
--- Return Sales or Marketing staff earning more than 10
-------------------------------------------------------------
+-- --------------------------------------------------
+-- AND evaluated before OR (default behaviour)
+-- --------------------------------------------------
 
 SELECT *
 FROM f_staffs
@@ -21,12 +16,9 @@ OR department = 'Marketing'
 AND salary > 10;
 
 
-------------------------------------------------------------
--- Task 2: Correct use of brackets
--- Business rule:
--- Return staff in Sales or Marketing
--- who earn more than 10
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Correct use of brackets for controlled logic
+-- --------------------------------------------------
 
 SELECT *
 FROM f_staffs
@@ -34,11 +26,9 @@ WHERE (department = 'Sales' OR department = 'Marketing')
 AND salary > 10;
 
 
-------------------------------------------------------------
--- Task 3: Using NOT
--- Business rule:
--- Exclude HR staff
-------------------------------------------------------------
+-- --------------------------------------------------
+-- Using NOT to exclude values
+-- --------------------------------------------------
 
 SELECT *
 FROM f_staffs

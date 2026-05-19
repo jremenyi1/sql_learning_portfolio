@@ -1,21 +1,24 @@
 /*
 ============================================================
-Week 3 - Submission Evidence (SQL Practice Tasks)
+Week 3 — Submission Evidence (SQL Practice Tasks)
 ============================================================
 
-This file contains all SQL queries submitted for Week 3.
-Each submission is clearly labelled and commented.
+Purpose:
+This file contains SQL queries submitted for assessment
+during Week 3 of my SQL learning programme.
 
-Focus areas:
-- arithmetic expressions
-- logical conditions
-- date filtering
-- sorting using ORDER BY
+Each section documents a single task, including the
+objective and the business logic applied. The emphasis
+is on correctness, clarity, and traceability rather than
+performance optimisation.
+
+Environment:
+- SQL dialect: Oracle SQL (Oracle APEX)
 ============================================================
 */
 
-------------------------------------------------------------
--- SUBMISSION 1: Event Financial Report
+-- --------------------------------------------------
+-- TASK 1: Event financial report
 --
 -- Objective:
 -- Generate an event financial report showing:
@@ -23,11 +26,14 @@ Focus areas:
 -- - final total cost after adding £300
 -- - applying 12% tax
 --
--- Conditions:
--- - only events costing more than 1500
--- - only events after 01-JAN-2026
--- - results sorted by final total cost (highest first)
-------------------------------------------------------------
+-- Business rules:
+-- - Include only events with cost > 1500
+-- - Include only events after 01-JAN-2026
+-- - Sort results by final total cost (descending)
+--
+-- Notes:
+-- No records matched the date condition in this dataset
+-- --------------------------------------------------
 
 SELECT
     name,
@@ -38,24 +44,23 @@ WHERE cost > 1500
   AND event_date > TO_DATE('01-JAN-2026', 'DD-MON-YYYY')
 ORDER BY "Final Total Cost" DESC;
 
--- Note:
--- No records matched the date condition (> 01-JAN-2026),
--- so no CSV output was generated for this query.
 
-
-------------------------------------------------------------
--- SUBMISSION 2: Partner Financial Performance Report
+-- --------------------------------------------------
+-- TASK 2: Partner financial performance report
 --
 -- Objective:
--- Calculate a revised authorised expense amount by:
--- - applying a 7% increase
--- - adding a fixed £400 bonus
+-- Calculate revised authorised expense amounts
 --
--- Conditions:
--- - authorised expense must not be NULL
--- - authorised expense must be greater than 1000
--- - results sorted by revised total (highest first)
-------------------------------------------------------------
+-- Business rules:
+-- - Apply a 7% increase
+-- - Add a fixed bonus of 400
+-- - Exclude NULL authorised expenses
+-- - Include only values greater than 1000
+-- - Sort results by revised total (descending)
+--
+-- Notes:
+-- One record met the criteria and was included
+-- --------------------------------------------------
 
 SELECT
     first_name,
@@ -67,24 +72,22 @@ WHERE auth_expense_amt IS NOT NULL
   AND auth_expense_amt > 1000
 ORDER BY "Revised Total" DESC;
 
--- Note:
--- One record met the criteria and was included
--- in the exported CSV output.
 
-
-------------------------------------------------------------
--- SUBMISSION 3: CD Inventory and Production Report
+-- --------------------------------------------------
+-- TASK 3: CD inventory and production report
 --
 -- Objective:
--- Display CDs where:
--- - the title begins with the letter 'A'
---   OR
--- - the producer is 'Sony Music'
+-- Return selected CDs based on title or producer rules
 --
--- Sorting:
--- - producer in ascending order
--- - year in descending order
-------------------------------------------------------------
+-- Business rules:
+-- - Include CDs where title starts with 'A'
+-- - OR producer is 'Sony Music'
+-- - Sort by producer (ascending)
+-- - Then sort by year (descending)
+--
+-- Notes:
+-- No records matched the filter conditions in this dataset
+-- --------------------------------------------------
 
 SELECT
     cd_number,
@@ -96,7 +99,3 @@ WHERE title LIKE 'A%'
    OR producer = 'Sony Music'
 ORDER BY producer ASC,
          year DESC;
-
--- Note:
--- No records matched the filter conditions
--- in this dataset.

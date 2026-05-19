@@ -1,55 +1,52 @@
 
 # Week 2 — SQL Basics
 
-This folder contains my **Week 2 SQL learning materials** from the Oracle Academy / Oracle APEX course.
+This week focuses on core SQL fundamentals and on understanding why databases
+are used in practice, especially when spreadsheets start to break down.
 
-The focus this week was on building confidence with SQL fundamentals and understanding **why SQL databases are used in practice**, especially compared to spreadsheet-based workflows.
+The work here comes from hands-on exercises in Oracle APEX and supporting notes
+I wrote to make sense of what SQL is doing under the hood.
 
 ---
 
-## Learning Focus
+## What I Worked On
 
 This week covered:
 
-- when SQL databases are more appropriate than Excel
-- how arithmetic operations and operator precedence affect query results
+- when SQL databases are a better choice than Excel
+- how arithmetic operations and operator precedence affect results
 - how to filter data correctly using the `WHERE` clause
-- why data quality and cleaning matter before loading data into a database
+- why data quality matters before loading data into a database
 
-The examples in this folder are intentionally simple and beginner-friendly. They reflect learning and practice, not production-level SQL.
+The emphasis was on getting the logic right and understanding *why* a query
+returns a particular result, not just making it run.
 
 ---
 
 ## Folder Contents
 
 - `README.md`
-  Project overview including folder contents.
+  Overview of the week’s focus and structure.
 
 - `sql_basics_notes.md`  
-  Conceptual notes written in plain English, covering SQL vs Excel, databases, and data quality.
+  Plain-language notes on SQL vs Excel, databases, and data quality.
 
 - `arithmetic_and_precedence.sql`  
-  SQL examples demonstrating correct calculation order using brackets and arithmetic operators.
+  Examples showing how brackets and arithmetic order affect calculations.
 
 - `where_clause_examples.sql`  
-  Practical examples of filtering data using `WHERE`, `BETWEEN`, `IN`, and `NULL` checks.
+  Filtering examples using `WHERE`, `BETWEEN`, `IN`, and `NULL` checks.
 
-- `submission_evidence.sql`
-
-  My Week 2 submission for SQL can be found here (assessment evidence).
+- `submission_evidence.sql`  
+  SQL queries submitted for the Week 2 assessment.
 
 - `reflections.md`  
-  A short 3–2–1 reflection summarising what I learned, what I want to improve, and my action plan.
+  A short reflection on what I learned, what was challenging, and what to work on next.
 
 ---
 
-## About This Repository
+## Notes
 
-These materials are kept **public** because:
-
-- the data is not sensitive
-- the queries are educational
-- the goal is to show learning progress and structured thinking
-
-This repository is a **learning portfolio**, not a collection of polished or production-ready SQL projects.
+This week was about building confidence with the basics. The queries are small
+by design so that the effect of each condition or calculation is easy to see.
 

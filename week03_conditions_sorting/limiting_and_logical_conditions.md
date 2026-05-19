@@ -5,13 +5,13 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Level](https://img.shields.io/badge/SCQF-Level%207-lightgrey)
 
-These notes summarise my understanding of **limiting results and logical conditions in SQL** from Week 3, with a focus on writing clearer and more accurate `SELECT` queries.
+These notes summarise my understanding of limiting results and applying logical conditions in SQL from Week 3, with a focus on writing clearer and more accurate `SELECT` queries.
 
 ---
 
 ## Why Limiting Results Matters
 
-Database tables can contain large numbers of rows. Returning all rows is often unnecessary and can make results difficult to read or interpret.
+Database tables can contain thousands or millions of rows. Returning everything is rarely useful and often makes results harder to interpret.
 
 Limiting results is useful when:
 
@@ -30,9 +30,11 @@ SQL provides the `LIMIT` keyword to control how many rows are returned.
 
 Example:
 
-`SELECT *`
-`FROM f_staffs`
-`LIMIT 10;`
+```sql
+SELECT *
+FROM f_staffs
+LIMIT 10;
+```
 
 This query returns only the first 10 rows from the table. Without sorting, the rows returned are not guaranteed to be in a specific order.
 
@@ -41,7 +43,7 @@ For this reason, `LIMIT` is often used together with `ORDER BY`.
 
 ## Combining Conditions with Logical Operators
 
-Most real-world queries need more than one condition. SQL allows conditions to be combined using logical operators in the WHERE clause.
+Most real-world queries need more than one condition. SQL allows conditions to be combined using logical operators in the `WHERE` clause.
 
 The main logical operators are:
 - `AND` — all conditions must be true
@@ -68,10 +70,12 @@ Brackets make the intended logic of a query explicit and easier to understand.
 
 Example:
 
-`SELECT *`
-`FROM f_staffs`
-`WHERE (department = 'Sales' OR department = 'Marketing')`
-`AND salary > 10;`
+```sql
+SELECT *
+FROM f_staffs
+WHERE (department = 'Sales' OR department = 'Marketing')
+    AND salary > 10;
+```
 
 ### Using brackets:
 
