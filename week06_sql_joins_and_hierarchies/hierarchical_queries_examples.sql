@@ -10,6 +10,7 @@ Notes:
 - Keywords used: START WITH, CONNECT BY, PRIOR, LEVEL
 */
 
+
 -- -----------------------------------------------
 -- BASIC HIERARCHY (TOP-DOWN)
 -- -----------------------------------------------
@@ -25,6 +26,7 @@ SELECT
 FROM employees
 START WITH manager_id IS NULL
 CONNECT BY PRIOR employee_id = manager_id;
+
 
 -- -----------------------------------------------
 -- ORG CHART STYLE OUTPUT (INDENTED)
@@ -43,6 +45,7 @@ FROM employees
 START WITH last_name = 'King'
 CONNECT BY PRIOR employee_id = manager_id;
 
+
 -- -----------------------------------------------
 -- BOTTOM-UP HIERARCHY
 -- -----------------------------------------------
@@ -59,6 +62,7 @@ SELECT
 FROM employees
 START WITH last_name = 'Grant'
 CONNECT BY employee_id = PRIOR manager_id;
+
 
 -- -----------------------------------------------
 -- COMPARISON NOTE

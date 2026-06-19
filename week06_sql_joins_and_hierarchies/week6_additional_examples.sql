@@ -1,6 +1,7 @@
 /*
 ============================================================
  Week 6 — Additional Examples (SQL Joins & Hierarchies)
+============================================================
 
  Purpose:
  This file contains a small number of additional SQL examples
@@ -18,9 +19,10 @@
 ============================================================
 */
 
+
 -- ----------------------------------------------------------
 -- EXAMPLE 1: SELF JOIN — Employee to Manager relationship
--- ----------------------------------------------------------
+-- 
 -- Lightbulb moment:
 -- The employees table is used twice with different aliases.
 -- One row represents the employee, the other represents their manager.
@@ -34,6 +36,7 @@
 --
 -- SQL can match each employee to the row that represents
 -- their manager.
+-- ----------------------------------------------------------
 
 SELECT
     e.first_name AS "Employee First Name",
@@ -50,9 +53,10 @@ ORDER BY
     m.last_name ASC,
     e.salary DESC;
 
+
 -- ----------------------------------------------------------
 -- EXAMPLE 2: LEFT OUTER JOIN — Employees without departments
--- ----------------------------------------------------------
+-- 
 -- Lightbulb moment:
 -- INNER JOIN only shows records that exist in BOTH tables.
 -- That means employees without a department would disappear.
@@ -62,6 +66,7 @@ ORDER BY
 --
 -- If there is no matching department, the department
 -- columns show NULL instead of removing the employee.
+-- ----------------------------------------------------------
 
 SELECT
     e.first_name || ' ' || e.last_name AS "Employee Name",
@@ -75,9 +80,10 @@ ORDER BY
     d.department_name NULLS LAST,
     e.salary DESC;
 
+
 -- ----------------------------------------------------------
 -- EXAMPLE 3: HIERARCHICAL QUERY — Organisation structure
--- ----------------------------------------------------------
+-- 
 -- Lightbulb moment:
 -- A self-join only shows one level (employee -> manager).
 -- Hierarchical queries allow SQL to walk through the FULL
@@ -89,6 +95,7 @@ ORDER BY
 --
 -- LPAD is used here to visually indent names so the
 -- hierarchy is easy to read.
+-- ----------------------------------------------------------
 
 SELECT
     LPAD(' ', (LEVEL - 1) * 3) || first_name || ' ' || last_name
