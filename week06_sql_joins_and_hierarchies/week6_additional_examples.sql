@@ -22,7 +22,8 @@
 
 -- ----------------------------------------------------------
 -- EXAMPLE 1: SELF JOIN — Employee to Manager relationship
--- 
+-- ----------------------------------------------------------
+
 -- Lightbulb moment:
 -- The employees table is used twice with different aliases.
 -- One row represents the employee, the other represents their manager.
@@ -36,6 +37,7 @@
 --
 -- SQL can match each employee to the row that represents
 -- their manager.
+
 -- ----------------------------------------------------------
 
 SELECT
@@ -56,7 +58,8 @@ ORDER BY
 
 -- ----------------------------------------------------------
 -- EXAMPLE 2: LEFT OUTER JOIN — Employees without departments
--- 
+-- ----------------------------------------------------------
+
 -- Lightbulb moment:
 -- INNER JOIN only shows records that exist in BOTH tables.
 -- That means employees without a department would disappear.
@@ -66,6 +69,7 @@ ORDER BY
 --
 -- If there is no matching department, the department
 -- columns show NULL instead of removing the employee.
+
 -- ----------------------------------------------------------
 
 SELECT
@@ -83,7 +87,8 @@ ORDER BY
 
 -- ----------------------------------------------------------
 -- EXAMPLE 3: HIERARCHICAL QUERY — Organisation structure
--- 
+-- ----------------------------------------------------------
+
 -- Lightbulb moment:
 -- A self-join only shows one level (employee -> manager).
 -- Hierarchical queries allow SQL to walk through the FULL
@@ -95,6 +100,7 @@ ORDER BY
 --
 -- LPAD is used here to visually indent names so the
 -- hierarchy is easy to read.
+
 -- ----------------------------------------------------------
 
 SELECT
