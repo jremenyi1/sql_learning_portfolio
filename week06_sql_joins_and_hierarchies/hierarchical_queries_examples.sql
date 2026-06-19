@@ -1,16 +1,17 @@
 /*
-====================================================================
-File: hierarchical_queries_examples.sql
-====================================================================
+===============================================================
+ File: hierarchical_queries_examples.sql
+===============================================================
 
-Purpose: Practice examples using SELF JOIN concepts and Oracle hierarchical queries.
-Week: 6
-Environment: Oracle SQL (Oracle APEX)
+ Purpose:
+ Practice examples using Oracle hierarchical queries.
+ Week: 6
+ Environment: Oracle SQL (Oracle APEX)
 
-Notes:
-- These examples show how Oracle handles parent–child relationships.
-- Hierarchical queries are an alternative to SELF JOINs when working with tree structures.
-- Keywords used: START WITH, CONNECT BY, PRIOR, LEVEL
+ Notes:
+ - These examples show how Oracle handles parent–child relationships.
+ - Hierarchical queries are an alternative to SELF JOINs when working with tree structures.
+ - Keywords used: START WITH, CONNECT BY, PRIOR, LEVEL
 ====================================================================
 */
 
