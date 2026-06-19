@@ -111,8 +111,8 @@ ON e.manager_id = m.employee_id;
 -- --------------------------------------------------
 -- SUMMARY
 -- --------------------------------------------------
--- `CROSS JOIN`   → all possible combinations
--- `NATURAL JOIN` → automatic join on same-named columns
--- `INNER JOIN`   → only matching rows
--- `LEFT JOIN`    → all left rows + matching right rows
--- `SELF JOIN`    → join a table to itself for hierarchies
+-- CROSS JOIN   → all possible combinations
+-- NATURAL JOIN → automatic join on same-named columns
+-- INNER JOIN   → only matching rows
+-- LEFT JOIN    → all left rows + matching right rows
+-- SELF JOIN    → join a table to itself for hierarchies
