@@ -31,6 +31,7 @@ Another important insight was that hierarchical queries allow SQL to move beyond
 ## Folder Contents
 
 - `README.md`
+  
   Overview of the week’s focus and learning outcomes.
 
 - `joins_and_hierarchies_notes.md`
