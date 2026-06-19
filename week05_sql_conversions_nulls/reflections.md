@@ -16,9 +16,9 @@ not just writing correct syntax.
 
 `TO_CHAR`, `TO_NUMBER`, and `TO_DATE` are mainly about making data usable.
 
-I used `TO_CHAR` to format dates and numbers so they are readable in reports.
-I used `TO_NUMBER` when working with numeric values stored as text.
-`TO_DATE` helped when working with string-based dates that needed proper
+- I used `TO_CHAR` to format dates and numbers so they are readable in reports.
+- I used `TO_NUMBER` when working with numeric values stored as text.
+- `TO_DATE` helped when working with string-based dates that needed proper
 conversion before filtering or calculations.
 
 The key point is that SQL will not fix inconsistent data automatically.
@@ -47,8 +47,8 @@ behave if you don’t handle it properly.
 
 I already knew both exist, but this week made the difference clearer.
 
-`CASE` is easier to read and works in more situations.
-`DECODE` is shorter, but more limited and harder to follow.
+- `CASE` is easier to read and works in more situations.
+- `DECODE` is shorter, but more limited and harder to follow.
 
 In practice, I now default to `CASE` unless I’m working with older Oracle code.
 
