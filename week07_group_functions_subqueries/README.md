@@ -30,24 +30,31 @@ carefully.
 ## Folder Contents
 
 - `README.md`
+  
   Overview of the week’s focus.
 
 - `group_functions_notes.md`
+  
   Notes on aggregate functions, grouping, and null handling.
 
 - `subqueries_notes.md`
+  
   Notes on single-row, multiple-row, and correlated subqueries.
 
 - `group_functions_examples.sql`
+  
   Practice queries using aggregate functions.
 
 - `subqueries_examples.sql`
+  
   Practice queries demonstrating different types of subqueries.
 
 - `submission_evidence.sql`
+  
   SQL queries submitted for the Week 7 assessment.
 
 - `reflections.md`
+  
   A short reflection on lessons learned and areas to improve.
 
 ---

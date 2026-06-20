@@ -1,9 +1,10 @@
 # Group Functions — Notes
 
-![SQL](https://img.shields.io/badge/SQL-Conditions-blue)
+![SQL Aggregate Functions](https://img.shields.io/badge/SQL-Aggregate_Functions-blue)
 ![Oracle APEX](https://img.shields.io/badge/Oracle-APEX-red)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Level](https://img.shields.io/badge/SCQF-Level%207-lightgrey)
+
+**Status:** ![Completed](https://img.shields.io/badge/Status-Completed-brightgreen)
+**Level:** ![SCQF Level 7](https://img.shields.io/badge/SCQF-Level%207-lightgrey)
 
 These notes summarise my understanding of SQL group functions from Week 7,
 with a focus on summarising data clearly and avoiding common mistakes with
