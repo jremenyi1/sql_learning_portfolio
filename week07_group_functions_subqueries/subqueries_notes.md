@@ -1,5 +1,11 @@
 # Subqueries — Notes
 
+![SQL Aggregate Functions](https://img.shields.io/badge/SQL-Subqueries-blue)
+![Oracle APEX](https://img.shields.io/badge/Oracle-APEX-red)
+![Completed](https://img.shields.io/badge/Status-Completed-brightgreen)
+![SCQF Level 7](https://img.shields.io/badge/SCQF-Level%207-lightgrey)
+
+
 These notes summarise my understanding of subqueries from Week 7, with a focus
 on writing queries where one result depends on another and avoiding common
 logic and null-handling issues.
