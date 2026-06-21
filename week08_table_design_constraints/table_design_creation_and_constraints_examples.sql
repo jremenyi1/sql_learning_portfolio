@@ -1,5 +1,5 @@
 /*
-File: table_creation_and_constraints_examples.sql
+File: table_design_creation_and_constraints_examples.sql
 Purpose: Practice examples demonstrating table creation
          and the use of constraints to enforce data integrity.
 Week: 8

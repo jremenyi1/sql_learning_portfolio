@@ -141,7 +141,7 @@ HAVING MIN(salary) >
 
 ------------------------------------------------------------
 -- NOTES:
--- • Aggregates were manually calculated to validate correctness
--- • Constraints enforce business rules at the database level
--- • Examples reflect real workflows used in reporting and analysis
+-- Aggregates were manually calculated to validate correctness
+-- Constraints enforce business rules at the database level
+-- Examples reflect real workflows used in reporting and analysis
 ------------------------------------------------------------

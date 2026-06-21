@@ -49,10 +49,9 @@ GROUP BY department_id;
 -- Employees earning more than the average
 -- salary in their own department
 
-SELECT
-    e.employee_id,
-    e.department_id,
-    e.salary
+SELECT e.employee_id,
+       e.department_id,
+       e.salary
 FROM employees e
 WHERE e.salary >
 (
@@ -86,9 +85,8 @@ WHERE salary < (
 -- Departments where the minimum salary
 -- is higher than the company-wide average
 
-SELECT
-    department_id,
-    MIN(salary) AS dept_min_salary
+SELECT department_id,
+       MIN(salary) AS dept_min_salary
 FROM department_salaries
 GROUP BY department_id
 HAVING MIN(salary) >

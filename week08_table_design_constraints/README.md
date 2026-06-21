@@ -42,49 +42,35 @@ underlying data is well designed.
 ## Folder Contents
 
 - `README.md`
-    Overview of the week’s focus.
+  
+  Overview of the week’s focus.
 
 - `table_design_creation_and_constraints.md`
+  
   Notes on creating tables, choosing data types, and applying constraints.
 
 - `table_design_creation_and_constraints_examples.sql`
+  
   Examples of table creation and constraints.
 
 - `table_modification_examples.sql`
+  
   Examples of table modifications.
 
 - `real_world_examples.sql`
+  
   Examples of real world.
 
 - `aggregate_query_subquery_examples.sql`
-    Practice queries using `AVG`, `MIN`, `MAX`, `GROUP BY`, and subqueries.
+  
+  Practice queries using `AVG`, `MIN`, `MAX`, `GROUP BY`, and subqueries.
 
 - `submission_evidence.sql`
-    SQL scripts submitted for the Week 8 assessment.
-
-- `reflections.md`
-    Weekly reflection on learning, challenges, and next steps.
-
----
-
-## Folder Contents
-
-- `table_modification_examples.sql`
-  Examples using `ALTER TABLE` to modify structures.
-
-- `aggregate_query_analysis_and_subquery_examples.sql`
-  Aggregate functions, GROUP BY, and subqueries.
-
-- `submission_evidence.sql`
+  
   SQL scripts submitted for the Week 8 assessment.
 
-- `real_world_employee_analysis.sql`
-  Practical employee-based SQL analysis.
-
-- `oracle_academy_reference.sql`
-  Reference examples from Oracle Academy.
-
-- `reflection.md`
+- `reflections.md`
+  
   Weekly reflection on learning, challenges, and next steps.
 
 ---
