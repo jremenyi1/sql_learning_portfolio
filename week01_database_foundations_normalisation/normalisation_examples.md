@@ -2,6 +2,7 @@
 
 These examples demonstrate how tables are brought into First, Second, and Third
 Normal Form using Week 1 practice exercises.
+
 ---
 
 ## First Normal Form (1NF)
@@ -23,6 +24,7 @@ A table is in 1NF when:
 |--------|-------|------------|
 | IT001  | Red   | $16.56     |
 | IT001  | Blue  | $16.56     |
+
 ---
 
 ## Second Normal Form (2NF)
@@ -45,6 +47,7 @@ Split into:
 
 **STORE_LOCATION**  
 (Store ID, Location)
+
 ---
 
 ## Third Normal Form (3NF)

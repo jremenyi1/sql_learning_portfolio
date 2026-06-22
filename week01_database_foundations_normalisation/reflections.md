@@ -2,6 +2,7 @@
 
 This week focused less on writing SQL and more on understanding how databases
 *should* be designed before queries are written.
+
 ---
 
 ## What I Learned
@@ -21,6 +22,7 @@ behind table splitting much clearer.
 
 Understanding business rules helped connect technical design decisions to
 real-world requirements.
+
 ---
 
 ## Challenges
@@ -28,6 +30,7 @@ real-world requirements.
 The most challenging part was identifying partial and transitive dependencies.
 These are not always obvious at first glance and require slowing down and
 analysing dependencies carefully.
+
 ---
 
 ## Key Takeaways
@@ -35,6 +38,7 @@ analysing dependencies carefully.
 - database design underpins reliable SQL
 - normalisation reduces both redundancy and confusion
 - good structure makes later querying easier and safer
+
 ---
 
 ## What I’ll Focus on Next

@@ -2,6 +2,7 @@
 
 This file summarises how business rules and unique identifiers guide database
 design.
+
 ---
 
 ## Business Rules
@@ -20,6 +21,7 @@ Examples identified:
 - **Structural**: define data structure  
 - **Procedural**: define process behaviour  
 - **Programmatic**: enforce rules through code
+
 ---
 
 ## Unique Identifiers (UIDs)

@@ -8,6 +8,7 @@ The formal submission for Week 1 was completed and submitted as a PDF:
 
 This Markdown file documents the scope and structure of the submitted work and
 explains how the design decisions align with relational database principles.
+
 ---
 
 ## Submission Overview
@@ -22,6 +23,7 @@ for a defined business scenario, including:
 
 The scenario, schema design, and normalisation steps are all contained
 in the submitted PDF.
+
 ---
 
 ## Database Scenario
@@ -78,6 +80,7 @@ The following tables were defined in the submission.
 
 Each table was designed with a single, clearly defined primary key to support
 relational integrity.
+
 ---
 
 ## Relationships and Cardinality
@@ -102,6 +105,7 @@ The following relationships and cardinalities were defined in the submission:
 
 The `Order_Items` table acts as a junction table to resolve the many-to-many
 relationship between orders and books.
+
 ---
 
 ## Normalisation
@@ -119,6 +123,7 @@ avoid redundancy.
 
 Books within an order are stored as separate rows in the `Order_Items` table
 rather than as a list in the `Orders` table.
+
 ---
 
 ### Second Normal Form (2NF)
@@ -131,6 +136,7 @@ rather than as a list in the `Orders` table.
 - Book details are stored only in the `Books` table
 
 This avoids partial dependency and duplication across tables.
+
 ---
 
 ### Third Normal Form (3NF)
@@ -143,6 +149,7 @@ This avoids partial dependency and duplication across tables.
 - Book price depends only on `book_id`
 
 This ensures that each fact is stored in exactly one place.
+
 ---
 
 ## Conceptual Design
@@ -155,6 +162,7 @@ The final design includes:
 - a structure consistent with Third Normal Form
 
 A conceptual diagram with keys and cardinality is included in the submitted PDF.
+
 ---
 
 ## Notes

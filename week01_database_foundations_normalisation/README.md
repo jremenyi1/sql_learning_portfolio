@@ -9,6 +9,7 @@ The main goal was to understand how good database design prevents redundancy,
 inconsistency, and logic errors later on.
 
 All work for this week was completed as a conceptual database design exercise.
+
 ---
 
 ## What I Worked On
@@ -24,6 +25,7 @@ This week covered:
 
 The main goal was to ensure that each table represents a single concept and that
 each piece of data is stored in the correct place.
+
 ---
 
 ## Folder Contents
@@ -49,6 +51,7 @@ each piece of data is stored in the correct place.
 - `submission_week1_SQL.pdf`  
   The formal assessed submission containing the database scenario, schema design,
   relationships, and normalisation.
+  
 ---
 
 ## Notes

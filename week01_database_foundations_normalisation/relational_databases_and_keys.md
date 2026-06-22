@@ -2,6 +2,7 @@
 
 These notes summarise my understanding of relational databases and why they are
 used instead of flat-file designs.
+
 ---
 
 ## Flat-File Databases
@@ -16,6 +17,7 @@ While simple, this approach leads to:
 
 Example: storing book details, authors, and publishers in one table causes the
 same information to be repeated multiple times.
+
 ---
 
 ## Relational Databases
@@ -34,6 +36,7 @@ Advantages include:
 - improved data integrity
 - consistency across tables
 - better performance and scalability
+
 ---
 
 ## Key Terminology
@@ -44,6 +47,7 @@ Advantages include:
 - **Field**: a single value at the intersection of a row and column  
 - **Primary Key**: uniquely identifies each row  
 - **Foreign Key**: references a primary key in another table
+
 ---
 
 ## Rules for Relational Tables
