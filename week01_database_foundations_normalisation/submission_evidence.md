@@ -4,7 +4,10 @@
 
 The formal submission for Week 1 was completed and submitted as a PDF:
 
-- `**submission_week1_SQL.pdf**`  
+**submission_week1_SQL.pdf**  
+[Open or download the submission PDF](submission/submission_week1_SQL.pdf)
+
+> Note: GitHub may not render PDFs inline. If the preview fails, please open the file directly.
 
 This Markdown file documents the scope and structure of the submitted work and
 explains how the design decisions align with relational database principles.
